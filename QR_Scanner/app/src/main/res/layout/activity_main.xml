@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00A6FF"
+    tools:context=".MainActivity">
+
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scannerView1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:autoFocusButtonColor="@android:color/holo_red_light"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/holo_blue_light"
+        app:flashButtonVisible="true"
+        app:maskColor="#335AE5"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id = "@+id/sst"
+        android:layout_below="@id/scannerView1"
+        android:layout_centerHorizontal="true"
+        android:text="Scan something..."
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#FF0808"
+        />
+
+    <Button
+        android:id="@+id/buttonEx"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scannerView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#5C4620"
+        android:text="Kilepes"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonValt1"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scannerView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#5C4620"
+        android:text="Elerhetok"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/KIAD"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="300dp"
+        android:gravity="center"
+        android:text="Kiadva ekkor: "
+        android:textColor="#008000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/VISSZA"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="304dp"
+        android:gravity="center"
+        android:text="Visszaveve ekkor: "
+        android:textColor="#ff0000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/IDO"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="479dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="290dp"
+        android:gravity="center"
+        android:text="Kiadva ennyi idot: "
+        android:textColor="#ff0000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+</ScrollView>
