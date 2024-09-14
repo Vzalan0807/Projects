@@ -48,6 +48,8 @@ public class SakkTabla {
     private String feherNev;
     private String feketeNev;
 
+    private boolean showGuide = false;
+
     boolean ujJatek;
 
     //A fo osztalya a GUI-nak
@@ -266,6 +268,29 @@ public class SakkTabla {
 
         final JMenuItem topList = new JMenuItem("Toplista");
 
+       // final JMenu onOffHelp = new JMenu("Show moves");
+
+
+
+        final JButton onOff = new JButton("Move help: OFF");
+        onOff.setBackground(Color.red);
+
+
+        onOff.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!showGuide) {
+                    onOff.setText("Move help: ON");
+                    onOff.setBackground(Color.GREEN);
+                    showGuide = true;
+                }else{
+                    onOff.setText("Move help: OFF");
+                    onOff.setBackground(Color.red);
+                    showGuide = false;
+                }
+            }
+        });
+
         //ha a toplist-ra nyomunk akkor kiadja az első 3 embert aki a legkevesebb lépésből adott mattot
         topList.addActionListener(new ActionListener() {
             @Override
@@ -305,9 +330,12 @@ public class SakkTabla {
                 System.exit(0);
             }
         });
-
+        topList.setHorizontalAlignment(SwingConstants.CENTER);
+        exitButton.setHorizontalAlignment(0);
+        onOff.setHorizontalAlignment(0);
         fileMenu.add(topList);
         fileMenu.add(exitButton);
+        fileMenu.add(onOff);
         return fileMenu;
     }
 
